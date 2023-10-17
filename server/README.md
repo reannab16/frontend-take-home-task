@@ -8,6 +8,7 @@ This is a sample server for managing invoices with two endpoints.
 2. Run the following commands to set up and start the server:
 
 ```shell
+npm install     # Installs dependencies
 npm run build   # Build the server
 npm run dev     # Start the server
 ```
