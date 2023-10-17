@@ -4,8 +4,9 @@ This is a sample server for managing invoices with two endpoints.
 
 ## Setup
 
-1. Navigate to the server directory.
-2. Run the following commands to set up and start the server:
+1. Make sure you have the latest Node version installed on your machine
+2. Navigate to the server directory.
+3. Run the following commands to set up and start the server:
 
 ```shell
 npm install     # Installs dependencies
