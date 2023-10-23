@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --emeraldGreen: #149E54;
+  --textColour: #000;
+  --background: #FFF;
+  --lightTransGreen: rgba(20, 158, 84, 0.04);
+  --transGreen: rgba(20, 158, 84, 0.8); 
+}
+
+
+
+body {
+  color: var(--textColour);
+  background-color: var(--background);
+}
