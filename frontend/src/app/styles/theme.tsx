@@ -14,7 +14,14 @@ const theme= createTheme({
         },
         
 
-    }
+    },
+
+    typography: {
+        button: {
+          textTransform: 'none',
+          fontWeight: 500,
+        }
+      }
 });
 
 export default theme;
