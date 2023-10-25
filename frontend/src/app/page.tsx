@@ -31,7 +31,7 @@ export default function Home() {
           <SearchBar setSearchQuery={setSearchQuery} />
           <Link
             href={`/create-invoice`}
-            className="h-12 w-48 flex items-center justify-center text-[var(--background)] bg-[var(--emeraldGreen)] rounded-md text-base font-medium"
+            className="cursor-pointer h-12 w-48 flex items-center justify-center text-[var(--background)] bg-[var(--emeraldGreen)] rounded-md text-base font-medium"
           >
             Create Invoice
           </Link>
@@ -43,7 +43,7 @@ export default function Home() {
         <div className="flex justify-end items-start">
           <Link
             href={`/create-invoice`}
-            className="h-12 w-48 flex items-center justify-center text-[var(--background)] bg-[var(--emeraldGreen)] rounded-md text-base font-medium"
+            className="cursor-pointer h-12 w-48 flex items-center justify-center text-[var(--background)] bg-[var(--emeraldGreen)] rounded-md text-base font-medium"
           >
             Create Invoice
           </Link>

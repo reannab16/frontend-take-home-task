@@ -197,7 +197,7 @@ export default function CreateInvoicePage() {
           Add Items
         </div>
         {form.items.map((item, index) => (
-          <ItemForm item={item} setForm={setForm} form={form} index={index} />
+          <ItemForm item={item} setForm={setForm} form={form} index={index} key={index} />
         ))}
 
         <Button

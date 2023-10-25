@@ -25,10 +25,10 @@ export default function RootLayout({
     <html lang="en">
       <QueryClientProvider client={queryClient}>
         <ThemeProvider theme={theme}>
-          <Toaster position="top-center" reverseOrder={false} />
           <body
             className={`flex flex-col items-center justify-start ${inter.className}`}
           >
+            <Toaster position="top-center" reverseOrder={false} />
             {children}
           </body>
         </ThemeProvider>

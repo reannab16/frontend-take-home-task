@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { styled } from "@mui/material/styles";
 import Table from "@mui/material/Table";
@@ -72,7 +73,6 @@ export default function InvoiceTable({
           <TableBody>
             {InvoicesQuery?.data?.data
               .filter((item: InvoiceType) => {
-                console.log(item.title.includes(searchQuery));
                 const a = {
                   ...item,
                   title: item.title.toLowerCase(),
