@@ -12,6 +12,10 @@ export default function ItemForm({
   form: FormType;
   index: number;
 }) {
+  /**
+   * sets the form state to include the inputted item descriptions
+   * @param e input field data
+   */
   const handleOnDescriptChange = (
     e: React.ChangeEvent<HTMLInputElement>,
   ) => {
@@ -29,6 +33,10 @@ export default function ItemForm({
     });
   };
 
+  /**
+   * sets the form state to include the inputted item prices
+   * @param e input field data
+   */
   const handleOnPriceChange = (
     e: React.ChangeEvent<HTMLInputElement>,
   ) => {
@@ -47,33 +55,33 @@ export default function ItemForm({
   }
 
   return (
-    <div className="flex items-center justify-start gap-x-5 w-full">
-      <div>
+    <div className="flex md:flex-row flex-col md:items-center md:justify-start md:gap-x-5 md:gap-y-0 gap-y-5 w-full">
+      <div className="w-full md:w-auto">
         <div className="text-base">Item Name*</div>
         <input
           type="text"
           value={item.description}
           onChange={(e)=>handleOnDescriptChange(e)}
           required
-          className="rounded h-12 border-2 border-black w-64 pl-5"
+          className="rounded h-12 border-2 border-black w-full md:w-64 pl-5"
         ></input>
       </div>
-      <div>
+      <div className="md:w-auto w-full">
         <div className="text-base">Price*</div>
         <input
           type="number"
           value={item.price}
           onChange={(e)=>handleOnPriceChange(e)}
           required
-          className="rounded h-12 border-2 border-black w-64 pl-5"
+          className="rounded h-12 border-2 border-black w-full lg:w-64 md:w-32 pl-5"
         ></input>
       </div>
       <div className="w-full">
-        <div className="text-base">Description*</div>
+        <div className="text-base">Description</div>
         <input
           type="text"
           required
-          className="rounded h-12 border-2 border-black w-full pl-5"
+          className="rounded md:h-12 h-24 border-2 border-black w-full pl-5"
         ></input>
       </div>
     </div>

@@ -1,4 +1,14 @@
 @tailwind base;
+
+@layer base {
+  .containedButton{
+    @apply bg-[#149E54] w-48
+  };
+
+  .buttonFont {
+    @apply font-medium
+  };
+}
 @tailwind components;
 @tailwind utilities;
 
@@ -8,6 +18,12 @@
   --background: #FFF;
   --lightTransGreen: rgba(20, 158, 84, 0.04);
   --transGreen: rgba(20, 158, 84, 0.8); 
+  --lightishTransGreen: rgba(20, 158, 84, 0.4);
+}
+
+input:focus {
+  border: solid 2px var(emeraldGreen);
+  outline: solid 2px var(--lightishTransGreen);
 }
 
 
