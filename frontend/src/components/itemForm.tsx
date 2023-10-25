@@ -1,5 +1,5 @@
 import React, { SetStateAction } from "react";
-import { FormItem, FormType } from "../create-invoice/page";
+import { FormItem, FormType } from "../app/create-invoice/page";
 
 export default function ItemForm({
   item,

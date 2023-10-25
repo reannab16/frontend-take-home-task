@@ -1,5 +1,5 @@
 import axios from "axios";
-import { FormType } from "./create-invoice/page";
+import { FormType } from "../app/create-invoice/page";
 
 const base = axios.create({
   baseURL: "http://localhost:8000/",

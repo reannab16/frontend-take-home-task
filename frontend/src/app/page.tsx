@@ -1,10 +1,10 @@
 "use client";
-import InvoiceTable from "./components/invoiceTable";
-import SearchBar from "./components/searchBar";
+import InvoiceTable from "../components/invoiceTable";
+import SearchBar from "../components/searchBar";
 import Link from "next/link";
 import { useQuery } from "react-query";
-import { getInvoicesEndpoint } from "./api";
-import LoadingSnackbar from "./components/loadingSnackbar";
+import { getInvoicesEndpoint } from "../services/api";
+import LoadingSnackbar from "../components/loadingSnackbar";
 import { useState } from "react";
 
 export default function Home() {

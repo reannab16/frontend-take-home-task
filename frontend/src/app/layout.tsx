@@ -1,8 +1,8 @@
 "use client";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import theme from "./styles/theme";
+import "../styles/globals.css";
+import theme from "../styles/theme";
 import { ThemeProvider } from "@emotion/react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { Toaster } from "react-hot-toast";
